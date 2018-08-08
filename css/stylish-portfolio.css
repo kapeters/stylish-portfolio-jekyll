@@ -228,6 +228,6 @@ hr.small {
     color: ~333333;
 }
 
-.footer a:hover, .header a:hover {
+footer a:hover, .header a:hover {
     color: #23527C;
 }
