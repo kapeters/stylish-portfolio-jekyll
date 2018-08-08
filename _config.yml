@@ -7,17 +7,17 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "www.kapetersoncv.com" # the base hostname & protocol for your site
 
 # User setting
-owner:
-email:
+owner: Katie Peterson
+email: kap45@medschl.cam.ac.uk
 facebook_username:
-twitter_username:
+twitter_username: kapeterson14
 github_username:
 address:
   - line:
   - line:
   # Feel free to add more lines here 
 telephone:
-copyright:
+copyright: Katie Peterson
 
 # API settings
 google_api_key:
