@@ -177,10 +177,9 @@ hr.small {
 }
 
 .mlselogo {
-    content:"";
+    background: url(../img/MLSElogo.png);
     width:28px;
     height:28px;
-    background: url(../img/MLSElogo.png);
     margin-bottom: 30px;
 }
 
