@@ -205,5 +205,20 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px;
+    background: url(../img/chicagoskyline.jpeg) no-repeat center center scroll;
+    background-size: 100%;
+}
+
+.footercard {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.footercard a, .header a{
+    color: ~333333;
+}
+
+.footer a:hover, .header a:hover {
+    color: #23527C;
+}
 }
