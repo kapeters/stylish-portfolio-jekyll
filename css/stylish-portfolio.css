@@ -207,7 +207,7 @@ hr.small {
 .largefooter {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url(../img/chicagoskyline.jpeg) no-repeat center center scroll;
+    background: url(../img/chicagoskydeck.jpeg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -216,7 +216,7 @@ hr.small {
 
 .smallfooter {
     padding: 50px;
-    background: url(../img/chicagoskyline.jpeg) no-repeat center center scroll;
+    background: url(../img/chicagoskydeck.jpeg) no-repeat center center scroll;
     background-size: 100%;
 }
 
