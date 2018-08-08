@@ -173,19 +173,19 @@ hr.small {
 .research-icon {
     width:28px;
     height:28px;
+    margin-bottom: 30px;
 }
 
 .mlselogo {
     content:"";
+    width:28px;
+    height:28px;
     background: url(../img/MLSElogo.png);
+    margin-bottom: 30px;
 }
 
 .research {
     padding: 50px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
 }
 
 /* Vertically centred text */
