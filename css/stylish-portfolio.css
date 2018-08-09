@@ -16,6 +16,10 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+body {
+background-color: Gainsboro;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -169,10 +173,6 @@ hr.small {
 }
 
 /* Research */
-
-body {
-    background-color: Gainsboro;
-}
 
 .research-icon {
     margin-bottom: 30px;
