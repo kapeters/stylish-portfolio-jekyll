@@ -166,17 +166,6 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* CV */
-
-.cv {
-    padding: 50px 0;
-    background: url(../img/sky1.JPG) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 /* Research */
 
 .research-icon {
