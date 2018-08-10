@@ -178,7 +178,7 @@ hr.small {
 
 /* Blog Preview on front page */
 
-.blogprev {
+section.blogprev {
     padding: 50px 0px;
     display: table;
     width: 100%;
