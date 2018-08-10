@@ -213,6 +213,101 @@ hr.small {
 
 /* Blog /
 
+/* Blogposts */
+
+.bloghead {
+  display: table;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 40%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.shiny-embed {
+  width: 100%;
+  min-height: 650px;
+  border: none;
+}
+
+.bloghead hr {
+  border-top-color: #515151;
+}
+
+.blogcontent {
+    padding: 50px 0;
+}
+
+.blogcontent ol {
+  padding-left: 5px;
+}
+
+.blogcontent p, .bloglist p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bloglist .item {
+  padding: 50px 0px;
+}
+
+.bloglist .item h3 {
+  text-align: left;
+  color: #000;
+}
+
+.bloglist .item a {
+  color: inherit;
+}
+
+/*.bloglist .item .tags a, .bloglist .item .date, .bloglist .item .excerpt {
+  color: #AAA;
+}*/
+
+/* Index of tags */
+
+.taglist {
+  height: 50%;
+  text-align: center;
+  padding: 50px;
+  color: #515151;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.taglist a {
+  color: inherit;
+}
+
+/* Gallery page */
+section.gallery {
+  min-height: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.dummy {
+    margin-top: 100%;
+}
+.tile {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    text-align:center;
+    margin-top:calc(50%);
+    border: #000;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
 /* CV */
 
 .cv {
