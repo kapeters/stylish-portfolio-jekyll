@@ -1,21 +1,63 @@
-<aside class="blog">
-  <div id = blog class="container">
+<section id="blog" class="blog">
+  <div class="container">
     <div class="row text-center">
-      <div class="col-lg-12 col-lg-offset-0">
-        <h1>Blog</h1>
-        <hr class="small">
-        <div class="row">
-          <div class="col-md-12 col-sm-6">
-            <div class="blogpost">
-              <h4>
-                <strong>Date</strong>
-              </h4>
-              <p><h4>preview of blog text</h4></p>
-              <p class="text-justify">blog text.</p>
-              <a href="#" class="btn btn-dark">Read More</a>
-            </div>
+      <div class="col-lg-12 text-center single-col">
+        <div class="item">
+          <a href="{{post.url}}" title="{{ post.title }}">
+              <h3>{{ post.title }}</h3>
+            </a>
+            <p class="tags date text-muted">
+              <!-- include the post date -->
+              {{ post.date | date_to_string }}
+              <!-- include the post tags -->
+              {% for tag in post.tags %}&emsp;
+                <a href="/blog/tags/{{ tag }}" class="tag">
+                  <i class="fa fa-tag fa-fw-2x"></i> {{ tag }}
+                </a>
+              {% endfor %}
+            </p>
+            <!-- include the subtitle of the post -->
+            <p class="lead">{{ post.subtitle }}</p>
+            <!-- include a post excerpt -->
+            <p class="excerpt text-muted">
+              <a href="{{post.url}}">{{ post.content | strip_html | truncatewords: 50 }}</a>
+            </p>
           </div>
+          <!-- add a dividing line -->
+          {% unless forloop.last %}
+            <hr>
+          {% endunless %}
+        {% endfor %}
+        <!-- pagination links -->
+        <!-- Pagination links -->
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            &#60;&#60;Previous
+          </a>
+        {% else %}
+          <span class="previous">
+            &#60;&#60;Previous
+          </span>
+        {% endif %}
+        <span class="page_number ">
+          &emsp;|&emsp; Page: {{ paginator.page }} of {{ paginator.total_pages }} &emsp;|&emsp;
+        </span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">
+            Next&#62;&#62;
+          </a>
+        {% else %}
+          <span class="next ">
+            Next&#62;&#62;
+          </span>
+        {% endif %}
       </div>
+      <!-- column -->
+      </div>
+    <!-- row -->
     </div>
+  <!-- container -->
   </div>
-</aside>
+</section>
+        
