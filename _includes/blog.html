@@ -1,21 +1,31 @@
-<aside class="blog">
-  <div id = blog class="container">
+<section id="blogprev" class="blogprev">
+  <div class="container">
     <div class="row text-center">
-      <div class="col-lg-12 col-lg-offset-0">
-        <h1>Blog</h1>
-        <hr class="small">
-        <div class="row">
-          <div class="col-md-12 col-sm-6">
-            <div class="blogpost">
-              <h4>
-                <strong>Date</strong>
-              </h4>
-              <p><h4>preview of blog text</h4></p>
-              <p class="text-justify">blog text.</p>
-              <a href="#" class="btn btn-dark">Read More</a>
+      <span class="lead">
+      {% capture my-include %}{% include blogprev.md %}{% endcapture %}
+      {{ my-include | markdownify }}
+    </span>
+      <!-- Cards of blog posts -->
+      <div class="row previewcards">
+        <div class="col-md-11 col-md-offset-1 hid">
+          <div class="row">
+          {% for post in site.posts limit:3 %}
+            {% unless forloop.first %}
+            <div class="col-md-1"></div>
+            {% endunless %}
+            <div class="col-md-3 col-sm-4">
+              <div class="card-light">
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p class="post-date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                <p class="excerpt text-muted">{{ post.content | strip_html | truncatewords: 25 }}</p>
+              </div>
             </div>
-          </div>
+          {% endfor %}
+        </div>
+        </div>
       </div>
     </div>
+    <!-- /.row -->
   </div>
-</aside>
+  <!-- /.container -->
+</section>
