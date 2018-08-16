@@ -176,6 +176,16 @@ hr.small {
     padding: 50px 0;
 }
 
+/* Research summary pages */
+
+.mlsehead {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background-colour: Teal
+}
+
 /* Blog /
 
 /* Blogposts */
