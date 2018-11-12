@@ -195,6 +195,10 @@ hr.small {
     margin: 0 auto;
 }
 
+.mlse-logo:hover {
+    opacity: 0.8;
+}
+
 /* Blog /
 
 /* Blogposts */
