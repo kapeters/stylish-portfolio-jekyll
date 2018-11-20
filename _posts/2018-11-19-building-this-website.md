@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "How I made this website"
 date: 2018-11-19
 ---
