@@ -7,17 +7,12 @@
             <a href="{{post.url}}" title="{{ post.title }}">
               <h3>{{ post.title }}</h3>
             </a>
-            <p class="tags date text-muted">
-              <!-- include the post date -->
-              {{ post.date | date_to_string }}
-              <!-- include the post tags -->
-            </p>
-            <!-- include the subtitle of the post -->
-            <p class="lead">{{ post.subtitle }}</p>
-            <!-- include a post excerpt -->
-            <p class="excerpt text-muted">
-              <a href="{{post.url}}">{{ post.content | strip_html | truncatewords: 50 }}</a>
-            </p>
+            <ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
           </div>
           <!-- add a dividing line -->
           {% unless forloop.last %}
